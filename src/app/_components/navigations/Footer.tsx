@@ -11,9 +11,9 @@ const Footer = () => {
   let showColor: boolean = false;
 
   return (
-    <footer className="sticky bottom-0 px-1 sm:px-5 py-8 dark:bg-gray-900 w-full">
-      <Container className="flex justify-center my-3 px-3 pt-3 bg-white rounded-2xl">
-        <div className="w-full h-full flex justify-between">
+    <footer className="absolute bottom-0 px-1 sm:px-5 py-8 dark:bg-gray-900 w-full">
+      <Container className="flex justify-center my-3 px-3 pt-5 bg-white rounded-2xl">
+        <div className="w-full h-full flex flex-col">
           <div className="flex flex-wrap justify-between">
             <div className="flex flex-col justify-between">
               <div className="flex flex-col gap-1">
@@ -55,15 +55,40 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex justify-between">
-              
+            <div className="flex gap-10 justify-between">
+              <div className="flex flex-col">
+                <Link href="/"
+                  className="text-base mt-2 font-normal">
+                  Home
+                </Link>
+                <Link href="/"
+                  className="text-base mt-2 font-normal">
+                  About us
+                </Link>
+                <Link href="/"
+                  className="text-base mt-2 font-normal">
+                  Work
+                </Link>
+              </div>
+              <div className="flex flex-col">
+                <Link href="/"
+                  className="text-base mt-2 font-normal">
+                  Service
+                </Link>
+                <Link href="/"
+                  className="text-base mt-2 font-normal">
+                  Contact us
+                </Link>
+              </div>
             </div>
           </div>
           <div className="flex flex-wrap justify-between">
             <span>New York, US</span>
             <span>AtlasPremier. All Rights Reserved</span>
           </div>
-           
+          <div className="flex justify-center font-bold">
+            <h1 className="text-5xl">Atlas Premier</h1>
+          </div>
         </div>
         {/* <div className="flex flex-wrap justify-center mx-auto">
           <div className="grid gap-y-5">
